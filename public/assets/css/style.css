@@ -1,0 +1,152 @@
+/* GENERAL STYLES*/
+body {
+	background-color: #F7F7F7;
+	background-image: url(../img/paw-bg-3.png);
+	background-size: 85px;
+	background-repeat: repeat;
+}
+
+hr {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+h4 {
+	color: black;
+	font-size: 36px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR STYLES */
+#logo {
+	color: black;
+	font-family: 'Lobster', cursive;
+}
+
+#paw {
+	width: 35px;
+}
+
+.nav-icon {
+	color: black;
+	font-size: 25px;
+}
+
+.nav-search {
+	color: black;
+	font-size: 20px;
+}
+
+#search-bar {
+	width: 100px;
+}
+
+/* FEED/POST STYLES */
+.content-box {
+	background-color: white;
+	border-style: solid;
+	border-color: #F3F3F3;
+	border-width: 1px;
+}
+
+.content-header {
+	height: 50px;
+}
+
+.content-img {
+	height: auto;
+}
+
+.post-pic {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.box-img {
+	width: 35px;
+	height: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 3px;
+}
+
+.username {
+	line-height: 50px;
+	color: black;
+}
+
+.like-button {
+	color: black;
+	font-size: 35px;
+	line-height: 5px;
+	margin-left: 10px;
+}
+
+.post-likes {
+	color: black;
+	font-size: 16px;
+	margin-left: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+}
+
+.comment-user {
+	color: black;
+	font-size: 14px;
+	margin-left: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	display: inline-block;
+	line-height: 20px;
+}
+
+.comment-text {
+	color: black;
+	font-size: 14px;
+	margin-left: 10px;
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	line-height: 20px;
+}
+
+/* PROFILE/GALLERY STYLES */
+.profile-content {
+	background-color: white;
+	border-style: solid;
+	border-color: #F3F3F3;
+	border-width: 1px;
+}
+
+.profile-pic {
+	width: 70%;
+	max-width: 70%;
+	height: auto;
+	margin-top: 20px;
+}
+
+.post-count {
+	color: black;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+.profile-bio {
+	color: black;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.img-cell {
+	height: 285px;
+	margin-bottom: 2%;
+	overflow: hidden;
+}
+
+.post-pic-gallery {
+	min-width: 80%;
+	max-width: 80%;
+/*	max-height: auto;
+	min-height: auto;*/
+}
