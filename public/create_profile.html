@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/create_profile.css" type="text/css" />
+		<title>CreateProfile</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="form">
+				<div id="createProfile">
+					<img src="assets/img/paw-print.png" id="paw_print">
+					<h1>Create Your <span>Pawsome!</span></h1>
+					<br>
+					<br>
+					<form action="/" method="post">
+							<div class="top-row">
+								<div class="field-wrap">
+									<label>
+										User Name<span class="req">*</span>
+									</label>
+									<input type="text" required autocomplete="off" />
+								</div>
+								<div class="field-wrap">
+									<label2>
+										<h5>About Yorself<span class="req">*</span></h5>
+									</label2>
+									<textarea>Tell Us About Yourself...</textarea>
+								</div>
+							</div>
+							<div>
+								<img src="assets/img/add-file-xxl.png" class="uploadImage">
+							</div>
+							<input type="file" id="profile_image">
+							<br>
+							<button type="submit" class="button button-block"/>Submit</button>
+					</form>
+				</div>
+				
+				<script type="text/javascript">
+				$(function(){
+				$('#profile_image').change( function(e) {
+				
+				var img = URL.createObjectURL(e.target.files[0]);
+				$('.uploadImage').attr('src', img);
+				});
+					});
+				</script>
+			</body>
+		</html>
