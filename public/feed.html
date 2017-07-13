@@ -151,13 +151,14 @@
 
 				<!-- POST BOX COMMENTS -->
 				<div class="row content-comment">
-					<a href="#">
-					<i class="fa fa-paw like-button" aria-hidden="true"><span class="post-likes">16 likes</span></i></a>
+					<a href="#like-submit" action = "pets/comment" method = "put">
+					<!--like button-->
+					<i class="fa fa-paw like-button" id="like-submit" aria-hidden="true"><span class="post-likes">16 likes</span></i></a>
 					<br>
 					<br>
-					<p class="comment-user">Hooch_Pooch</p><p class="comment-text">WOOF! WOOF!</p><br>
-					<p class="comment-user">Kool_kat</p><p class="comment-text">meeeeeeeeooooooow...</p><br>
-					<p class="comment-user">Thor</p><p class="comment-text">Woooooooooooooooooof! Ruff Ruff</p><br>
+					<div id="comment-section">
+						<!--comment section div-->
+					</div>
 					<hr>
 					
 					<div class="row>">
@@ -166,8 +167,10 @@
 							
 							<div class="col s10">
 							<div class="input-field col s12">
-			          <i class="material-icons prefix"><i class="fa fa-comment-o" aria-hidden="true"></i>
-								</i>
+								<a href="#comment-submit" action = "/pets/comment" method = "post">
+			          <!--comment button-->
+			          <i class="material-icons prefix like-button" id="comment-submit"><i class="fa fa-comment-o" aria-hidden="true"></i>
+								</i></a>
 			          <input type="text" id="post-comment-input">
 			          <label for="post-comment-input"></label>
 		        	</div>
@@ -194,6 +197,10 @@
 	</div>
 	<!-- END POST ROW -->
 
+	<div class="row">
+		<br><br><br><br>
+	</div>
+
 <!-- jQUERY CDN -->
 <script
 	src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -211,6 +218,56 @@
     $('#modal1').on('click', function() {
 
     });
+  });
+
+    //on click function for submitting comment 
+    $("#comment-submit").on("click", function(event){
+    	var comment = $("#post-comment-input").val();
+   
+    console.log(comment);
+
+    //post method
+    $.post("/pets/comment", comment) //, function(data){
+    	.done(function() {
+
+    	var row1 = $("#comment-section");
+
+    	//row1.addClass("new-comment");
+    	
+    	row1.append("<p>" + comment + "</p>");
+
+    	console.log("appended");
+
+    	$("#comment-section").prepend(row1);
+
+    	
+      
+    });
+   //});
+
+   //emptying the input area 
+
+//     $("post-comment-input").val("");
+
+//     $.get("/pets/comment", function(data) {
+
+//  if (data.length !== 0) {
+
+//    for (var i = 0; i < data.length; i++) {
+
+//      var row = $("<div>");
+//      row.addClass("new-comment");
+
+//      row.append("<p>" + data[i].comment+   "</p>");
+     
+//    }
+
+//  }
+
+// });
+
+
+
   });
 
 </script>
