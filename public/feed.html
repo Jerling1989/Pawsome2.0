@@ -156,7 +156,9 @@
 					<i class="fa fa-paw like-button" id="like-submit" aria-hidden="true"><span class="post-likes">16 likes</span></i></a>
 					<br>
 					<br>
-					<div id="comment-section"></div>
+					<div id="comment-section">
+						<!--comment section div-->
+					</div>
 					<hr>
 					
 					<div class="row>">
@@ -220,47 +222,49 @@
 
     //on click function for submitting comment 
     $("#comment-submit").on("click", function(event){
-    	var status = {
-    		comment : $("post-comment-input").val()
-    	};
+    	var comment = $("#post-comment-input").val();
    
-    console.log(status);
+    console.log(comment);
 
     //post method
-    $.post("/pets/comment", status) //, function(data){
+    $.post("/pets/comment", comment) //, function(data){
     	.done(function() {
 
-    	var row = $("<div>");
+    	var row1 = $("#comment-section");
 
-    	row.addClass("new-comment");
+    	//row1.addClass("new-comment");
     	
-    	row.append("<p>" + status.comment + "</p>");
+    	row1.append("<p>" + comment + "</p>");
 
-    	$("#comment-section").prepend(row);
+    	console.log("appended");
+
+    	$("#comment-section").prepend(row1);
+
+    	
       
     });
    //});
 
    //emptying the input area 
 
-    $("post-comment-input").val("");
+//     $("post-comment-input").val("");
 
-    $.get("/pets/comment", function(data) {
+//     $.get("/pets/comment", function(data) {
 
- if (data.length !== 0) {
+//  if (data.length !== 0) {
 
-   for (var i = 0; i < data.length; i++) {
+//    for (var i = 0; i < data.length; i++) {
 
-     var row = $("<div>");
-     row.addClass("new-comment");
+//      var row = $("<div>");
+//      row.addClass("new-comment");
 
-     row.append("<p>" + data[i].comment+   "</p>");
+//      row.append("<p>" + data[i].comment+   "</p>");
      
-   }
+//    }
 
- }
+//  }
 
-});
+// });
 
 
 
