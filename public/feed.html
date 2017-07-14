@@ -30,7 +30,7 @@
 			<div class="row">
 
 				<div class="col s4">
-		      <a id="logo" href="#" class="brand-logo">
+		      <a id="logo" href="/" class="brand-logo">
 		      <img id="paw" src="assets/img/paw-print.png"> | Pawsome</a>
 				</div>
 				
@@ -64,7 +64,7 @@
 		      	<li><a href="#modal1"><i title="add photo" class="fa fa-camera nav-icon" aria-hidden="true"></i></a></li>
 
 						<!-- PROFILE ICON -->
-		        <li><a href="#"><i title="view profile" class="fa fa-user nav-icon" aria-hidden="true"></i></a></li>
+		        <li><a href="/profile"><i title="view profile" class="fa fa-user nav-icon" aria-hidden="true"></i></a></li>
 		      </ul>
 	      </div>
 
@@ -133,12 +133,12 @@
 				<!-- POST BOX HEADER -->
 				<div class="row content-header">
 					<div class="col s1">
-						<a href="#">
+						<a href="/profile">
 						<img src="assets/img/thumbnail.jpg" alt="" class="circle responsive-img box-img"></a>
 					</div>
 					<div class="col s11">
-						<a href="#">
-						<h6 class="username"><strong>the_kona_pup</strong></h6></a>
+						<!-- <a href="#"> -->
+						<h6 class="username"><strong>the_kona_pup</strong></h6><!-- </a> -->
 					</div>			
 				</div>
 				<!-- END POST BOX HEADER -->
@@ -151,14 +151,14 @@
 
 				<!-- POST BOX COMMENTS -->
 				<div class="row content-comment">
-					<a href="#like-submit" action = "pets/comment" method = "put">
-					<!--like button-->
-					<i class="fa fa-paw like-button" id="like-submit" aria-hidden="true"><span class="post-likes">16 likes</span></i></a>
+					<a href="#">
+					<i class="fa fa-paw like-button" aria-hidden="true"><span class="post-likes">16 likes</span></i></a>
 					<br>
 					<br>
-					<div id="comment-section">
-						<!--comment section div-->
-					</div>
+					<p class="comment-user">Hooch_Pooch</p><p class="comment-text">WOOF! WOOF!</p><br>
+					<p class="comment-user">Kool_kat</p><p class="comment-text">meeeeeeeeooooooow...</p><br>
+					<p class="comment-user">Thor</p><p class="comment-text">Woooooooooooooooooof! Ruff Ruff</p><br>
+					<p class="comment-user">Pawsome_Opossum</p><p class="comment-text">HhSSsSSSsSSSsSS!...</p><br>
 					<hr>
 					
 					<div class="row>">
@@ -167,10 +167,8 @@
 							
 							<div class="col s10">
 							<div class="input-field col s12">
-								<a href="#comment-submit" action = "/pets/comment" method = "post">
-			          <!--comment button-->
-			          <i class="material-icons prefix like-button" id="comment-submit"><i class="fa fa-comment-o" aria-hidden="true"></i>
-								</i></a>
+			          <i class="material-icons prefix"><i class="fa fa-comment-o" aria-hidden="true"></i>
+								</i>
 			          <input type="text" id="post-comment-input">
 			          <label for="post-comment-input"></label>
 		        	</div>
@@ -197,9 +195,172 @@
 	</div>
 	<!-- END POST ROW -->
 
+
 	<div class="row">
 		<br><br><br><br>
 	</div>
+
+	<!-- START POST ROW -->
+	<div class="row">
+
+		<!-- MARGIN -->
+		<div class="col s3">
+		</div>
+		<!-- END MARGIN -->
+
+		<!-- CONTENT COLUMN -->
+		<div class="col s6">
+
+			<!-- POST BOX -->
+			<div class="content-box">
+
+				<!-- POST BOX HEADER -->
+				<div class="row content-header">
+					<div class="col s1">
+						<a href="#">
+						<img src="http://vignette1.wikia.nocookie.net/dogs-cats/images/6/66/Siamese_cat_2.jpg/revision/latest?cb=20091204153103" alt="" class="circle responsive-img box-img"></a>
+					</div>
+					<div class="col s11">
+						<!-- <a href="#"> -->
+						<h6 class="username"><strong>Kool_Kat</strong></h6><!-- </a> -->
+					</div>			
+				</div>
+				<!-- END POST BOX HEADER -->
+
+				<!-- POST BOX IMAGE -->
+				<div class="row content-img">
+					<img src="http://www.catster.com/wp-content/uploads/2015/06/sealPt1_96212846.png" alt="" class="responsive-img post-pic">
+				</div>
+				<!-- END POST BOX IMAGE -->
+
+				<!-- POST BOX COMMENTS -->
+				<div class="row content-comment">
+					<a href="#">
+					<i class="fa fa-paw like-button" aria-hidden="true"><span class="post-likes">7 likes</span></i></a>
+					<br>
+					<br>
+					<p class="comment-user">the_kona_pup</p><p class="comment-text">WoOoOoOF!...</p><br>
+					<p class="comment-user">Hooch_Pooch</p><p class="comment-text">rruuufffff</p><br>
+					<p class="comment-user">Pawsome_Opossum</p><p class="comment-text">HhSSsSSSsSSSsSS!...</p><br>
+					<p class="comment-user">Thor</p><p class="comment-text">Woooooooooooooooooof! Ruff Ruff</p><br>
+					<hr>
+					
+					<div class="row>">
+						<div class="col s1">
+						</div>
+							
+							<div class="col s10">
+							<div class="input-field col s12">
+			          <i class="material-icons prefix"><i class="fa fa-comment-o" aria-hidden="true"></i>
+								</i>
+			          <input type="text" id="post-comment-input">
+			          <label for="post-comment-input"></label>
+		        	</div>
+		        	</div>
+
+		        <div class="col s1">
+						</div>
+        	</div>
+					
+				</div>
+				<!-- END POST BOX COMMENTS -->
+
+		  </div>
+		  <!-- END POST BOX -->
+
+		</div>
+		<!-- END CONTENT COLUMN -->
+
+		<!-- MARGIN -->
+		<div class="col s3">
+		</div>
+		<!-- END MARGIN -->
+
+	</div>
+	<!-- END POST ROW -->
+
+
+	<div class="row">
+		<br><br><br><br>
+	</div>
+
+	<!-- START POST ROW -->
+	<div class="row">
+
+		<!-- MARGIN -->
+		<div class="col s3">
+		</div>
+		<!-- END MARGIN -->
+
+		<!-- CONTENT COLUMN -->
+		<div class="col s6">
+
+			<!-- POST BOX -->
+			<div class="content-box">
+
+				<!-- POST BOX HEADER -->
+				<div class="row content-header">
+					<div class="col s1">
+						<a href="#">
+						<img src="http://woodstream.scene7.com/is/image/woodstream/hh-animals-opossum-3?$ProductPgLarge2$" alt="" class="circle responsive-img box-img"></a>
+					</div>
+					<div class="col s11">
+						<!-- <a href="#"> -->
+						<h6 class="username"><strong>Pawsome_Opossum <a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i></a></strong></h6><!-- </a> -->
+					</div>			
+				</div>
+				<!-- END POST BOX HEADER -->
+
+				<!-- POST BOX IMAGE -->
+				<div class="row content-img">
+					<img src="http://www.crazywebsite.com/Website-Clipart-Pictures-Videos/Funny-Pets-Animals/Opossum_Baby_Hanging_Tail_Tree_Picture-1.jpg" alt="" class="responsive-img post-pic">
+				</div>
+				<!-- END POST BOX IMAGE -->
+
+				<!-- POST BOX COMMENTS -->
+				<div class="row content-comment">
+					<a href="#">
+					<i class="fa fa-paw like-button" aria-hidden="true"><span class="post-likes">138,567 likes</span></i></a>
+					<br>
+					<br>
+					<p class="comment-user">Kool_kat</p><p class="comment-text">Meow meow meow...MEOW!</p><br>
+					<p class="comment-user">Hooch_Pooch</p><p class="comment-text">woof woof... woof</p><br>
+					<p class="comment-user">Thor</p><p class="comment-text">GrrrrrrGrRRRrrrrr</p><br>
+					<hr>
+					
+					<div class="row>">
+						<div class="col s1">
+						</div>
+							
+							<div class="col s10">
+							<div class="input-field col s12">
+			          <i class="material-icons prefix"><i class="fa fa-comment-o" aria-hidden="true"></i>
+								</i>
+			          <input type="text" id="post-comment-input">
+			          <label for="post-comment-input"></label>
+		        	</div>
+		        	</div>
+
+		        <div class="col s1">
+						</div>
+        	</div>
+					
+				</div>
+				<!-- END POST BOX COMMENTS -->
+
+		  </div>
+		  <!-- END POST BOX -->
+
+		</div>
+		<!-- END CONTENT COLUMN -->
+
+		<!-- MARGIN -->
+		<div class="col s3">
+		</div>
+		<!-- END MARGIN -->
+
+	</div>
+	<!-- END POST ROW -->
 
 <!-- jQUERY CDN -->
 <script
@@ -218,56 +379,6 @@
     $('#modal1').on('click', function() {
 
     });
-  });
-
-    //on click function for submitting comment 
-    $("#comment-submit").on("click", function(event){
-    	var comment = $("#post-comment-input").val();
-   
-    console.log(comment);
-
-    //post method
-    $.post("/pets/comment", comment) //, function(data){
-    	.done(function() {
-
-    	var row1 = $("#comment-section");
-
-    	//row1.addClass("new-comment");
-    	
-    	row1.append("<p>" + comment + "</p>");
-
-    	console.log("appended");
-
-    	$("#comment-section").prepend(row1);
-
-    	
-      
-    });
-   //});
-
-   //emptying the input area 
-
-//     $("post-comment-input").val("");
-
-//     $.get("/pets/comment", function(data) {
-
-//  if (data.length !== 0) {
-
-//    for (var i = 0; i < data.length; i++) {
-
-//      var row = $("<div>");
-//      row.addClass("new-comment");
-
-//      row.append("<p>" + data[i].comment+   "</p>");
-     
-//    }
-
-//  }
-
-// });
-
-
-
   });
 
 </script>

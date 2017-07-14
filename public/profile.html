@@ -23,6 +23,34 @@
 </head>
 <body>
 
+	<!-- START MODAL -->
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Add a Pic!</h4>
+			
+			<!-- SUBMIT FORM -->
+      <form action="#">
+		    <div class="file-field input-field">
+		      <div class="btn">
+		        <span>File</span>
+		        <input type="file">
+		      </div>
+		      <div class="file-path-wrapper">
+		        <input class="file-path validate" type="text">
+		      </div>
+		    </div>
+		  </form>
+		  <!-- END SUBMIT FORM -->
+        
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+  <!-- END MODAL -->
+
 	<div class="navbar-fixed">
 	<nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -30,7 +58,7 @@
 			<div class="row">
 
 				<div class="col s4">
-		      <a id="logo" href="#" class="brand-logo">
+		      <a id="logo" href="/" class="brand-logo">
 		      <img id="paw" src="assets/img/paw-print.png"> | Pawsome</a>
 				</div>
 				
@@ -57,7 +85,11 @@
 				<div class="col s4">
 		      <ul class="right hide-on-med-and-down">
 		      	<li><a href="#"><i class="fa fa-compass nav-icon" aria-hidden="true"></i></a></li>
-		      	<li><a href="#"><i class="fa fa-camera nav-icon" aria-hidden="true"></i></a></li>
+
+		      	<!-- ADD PHOTO ICON -->
+		      	<!-- Modal Trigger -->
+		      	<li><a href="#modal1"><i title="add photo" class="fa fa-camera nav-icon" aria-hidden="true"></i></a></li>
+
 		        <li><a href="#"><i class="fa fa-user nav-icon" aria-hidden="true"></i></a></li>
 		      </ul>
 	      </div>
@@ -130,20 +162,20 @@
 			
 			<!-- POST IMAGE -->
 			<div class="col s4 img-cell valign-wrapper">
-				<img src="http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02086240-Shih-Tzu/n02086240_110.jpg" alt="" 
+				<img src="http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02086240-Shih-Tzu/n02086240_1333.jpg" alt="" 
 				class="responsive-img post-pic-gallery">
 			</div>
 			<!-- END POST IMAGE -->
 			
 			<!-- POST IMAGE -->
 			<div class="col s4 img-cell valign-wrapper">
-				<img src="http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02086240-Shih-Tzu/n02086240_4127.jpg" alt="" class="responsive-img post-pic-gallery">
+				<img src="http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02086240-Shih-Tzu/n02086240_7142.jpg" alt="" class="responsive-img post-pic-gallery">
 			</div>
 			<!-- END POST IMAGE -->
 			
 			<!-- POST IMAGE -->
 			<div class="col s4 img-cell valign-wrapper">
-				<img src="assets/img/posted-pic.jpg" alt="" class="responsive-img post-pic-gallery">
+				<img src="http://vision.stanford.edu/aditya86/ImageNetDogs/images/n02086240-Shih-Tzu/n02086240_9098.jpg" alt="" class="responsive-img post-pic-gallery">
 			</div>
 			<!-- END POST IMAGE -->
 			
@@ -167,6 +199,18 @@
 
 <!-- MATERIALIZE JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+
+	  $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $('#modal1').on('click', function() {
+
+    });
+  });
+
+</script>
 
 </body>
 </html>
