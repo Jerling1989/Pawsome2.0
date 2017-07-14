@@ -11,7 +11,7 @@
              cb(null, 'uploads/profile')
          },
          filename: function(req, file, cb) {
-             cb(null, file.fieldname + '.jpg')
+             cb(null, file.originalname )
          }
      });
 
@@ -45,8 +45,8 @@
              if (err) {
                 return res.end("Error uploading file.")
              }
-             res.end("File is uploaded");
-             console.log(res);
+             res.redirect("/");
+             console.log(res.req.file.path);
              
         
              db.Profile.create({

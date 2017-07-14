@@ -1,219 +1,188 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>PAWSOME | FEED</title>
-
-	<!-- FAVICON -->
-	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-
-	<!-- RESET CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-	<!-- MATERIALIZE CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-
-	<!-- GOOGLE FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
-
-	<!-- FONT AWESOME -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-	<!-- STYLE CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-	
-	<div class="navbar-fixed">
-	<nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-			
-			<div class="row">
-
-				<div class="col s4">
-		      <a id="logo" href="#" class="brand-logo">
-		      <img id="paw" src="assets/img/paw-print.png"> | Pawsome</a>
-				</div>
-				
-				<div class="col s4">
-				<div class="row">
-
-					<div class="col s1">
-						<i class="fa fa-search nav-search" aria-hidden="true"></i>
-					</div>
-
-					<div class="col s11">
-					<form>
-		        <div class="input-field">
-		          <input id="search" type="search" required>
-		          <label class="label-icon" for="search"></label>
-		          <!-- <i class="material-icons">close</i> -->
-		        </div>
-		      </form>	
-		      </div>
-
-		    </div>
-				</div>
-
-				<div class="col s4">
-		      <ul class="right hide-on-med-and-down">
-		        <!-- SEARCH ICON -->
-		      	<li><a href="#"><i title="search" class="fa fa-compass nav-icon" aria-hidden="true"></i></a></li>
+	<head>
+		<title>PAWSOME | FEED</title>
+		<!-- FAVICON -->
+		<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+		<!-- RESET CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<!-- MATERIALIZE CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+		<!-- FONT AWESOME -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		
+		<div class="navbar-fixed">
+			<nav class="white" role="navigation">
+				<div class="nav-wrapper container">
+					
+					<div class="row">
+						<div class="col s4">
+							<a id="logo" href="#" class="brand-logo">
+							<img id="paw" src="assets/img/paw-print.png"> | Pawsome</a>
+						</div>
 						
-						<!-- ADD PHOTO ICON -->
-		      	<!-- Modal Trigger -->
-		      	<li><a href="#modal1"><i title="add photo" class="fa fa-camera nav-icon" aria-hidden="true"></i></a></li>
-
-						<!-- PROFILE ICON -->
-		        <li><a href="#"><i title="view profile" class="fa fa-user nav-icon" aria-hidden="true"></i></a></li>
-		      </ul>
-	      </div>
-
-      </div>
-
-			<!-- MOBILE NAV -->
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#"><i class="fa fa-compass nav-icon" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-user nav-icon" aria-hidden="true"></i></a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons nav-icon">menu</i></a>
-
-
-    </div>
-  </nav>
-  </div>
-
-
-	<!-- START MODAL -->
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Add a Pic!</h4>
-			
-			<!-- SUBMIT FORM -->
-      <form action="#">
-		    <div class="file-field input-field">
-		      <div class="btn">
-		        <span>File</span>
-		        <input type="file">
-		      </div>
-		      <div class="file-path-wrapper">
-		        <input class="file-path validate" type="text">
-		      </div>
-		    </div>
-		  </form>
-		  <!-- END SUBMIT FORM -->
-        
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
-    </div>
-  </div>
-  <!-- END MODAL -->
-
-
-	<div class="row">
-		<br><br><br><br>
-	</div>
-
-	<!-- START POST ROW -->
-	<div class="row">
-
-		<!-- MARGIN -->
-		<div class="col s3">
-		</div>
-		<!-- END MARGIN -->
-
-		<!-- CONTENT COLUMN -->
-		<div class="col s6">
-
-			<!-- POST BOX -->
-			<div class="content-box">
-
-				<!-- POST BOX HEADER -->
-				<div class="row content-header">
-					<div class="col s1">
-						<a href="#">
-						<img src="assets/img/thumbnail.jpg" alt="" class="circle responsive-img box-img"></a>
+						<div class="col s4">
+							<div class="row">
+								<div class="col s1">
+									<i class="fa fa-search nav-search" aria-hidden="true"></i>
+								</div>
+								<div class="col s11">
+									<form>
+										<div class="input-field">
+											<input id="search" type="search" required>
+											<label class="label-icon" for="search"></label>
+											<!-- <i class="material-icons">close</i> -->
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col s4">
+							<ul class="right hide-on-med-and-down">
+								<!-- SEARCH ICON -->
+								<li><a href="#"><i title="search" class="fa fa-compass nav-icon" aria-hidden="true"></i></a></li>
+								
+								<!-- ADD PHOTO ICON -->
+								<!-- Modal Trigger -->
+								<li><a href="#modal1"><i title="add photo" class="fa fa-camera nav-icon" aria-hidden="true"></i></a></li>
+								<!-- PROFILE ICON -->
+								<li><a href="#"><i title="view profile" class="fa fa-user nav-icon" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="col s11">
-						<a href="#">
-						<h6 class="username"><strong>the_kona_pup</strong></h6></a>
-					</div>			
+					<!-- MOBILE NAV -->
+					<ul id="nav-mobile" class="side-nav">
+						<li><a href="#"><i class="fa fa-compass nav-icon" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-user nav-icon" aria-hidden="true"></i></a></li>
+					</ul>
+					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons nav-icon">menu</i></a>
 				</div>
-				<!-- END POST BOX HEADER -->
-
-				<!-- POST BOX IMAGE -->
-				<div class="row content-img">
-					<img src="assets/img/posted-pic.jpg" alt="" class="responsive-img post-pic">
-				</div>
-				<!-- END POST BOX IMAGE -->
-
-				<!-- POST BOX COMMENTS -->
-				<div class="row content-comment">
-					<a href="#">
-					<i class="fa fa-paw like-button" aria-hidden="true"><span class="post-likes">16 likes</span></i></a>
-					<br>
-					<br>
-					<p class="comment-user">Hooch_Pooch</p><p class="comment-text">WOOF! WOOF!</p><br>
-					<p class="comment-user">Kool_kat</p><p class="comment-text">meeeeeeeeooooooow...</p><br>
-					<p class="comment-user">Thor</p><p class="comment-text">Woooooooooooooooooof! Ruff Ruff</p><br>
-					<hr>
-					
-					<div class="row>">
+			</nav>
+		</div>
+		<!-- START MODAL -->
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal">
+			<div class="modal-content">
+				<h4>Add a Pic!</h4>
+				
+				<!-- SUBMIT FORM -->
+				<form enctype="multipart/form-data" id="uploadForm"
+					action="/pets/profilePic" method="post">
+					<div class="file-field input-field">
+						<div class="btn">
+							<span>File</span>
+							<input type="file" name="profilePic" class="form-control-file" id="pet-image" aria-describedby="fileHelp">
+						</div>
+						<div class="file-path-wrapper">
+							<input class="file-path validate" type="text">
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+				</form>
+				<!-- END SUBMIT FORM -->
+				
+			</div>
+			<div class="modal-footer">
+				
+				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+			</div>
+		</div>
+		<!-- END MODAL -->
+		<div class="row">
+			<br><br><br><br>
+		</div>
+		<!-- START POST ROW -->
+		<div class="row">
+			<!-- MARGIN -->
+			<div class="col s3">
+			</div>
+			<!-- END MARGIN -->
+			<!-- CONTENT COLUMN -->
+			<div class="col s6">
+				<!-- POST BOX -->
+				<div class="content-box">
+					<!-- POST BOX HEADER -->
+					<div class="row content-header">
 						<div class="col s1">
+							<a href="#">
+							<img src="assets/img/thumbnail.jpg" alt="" class="circle responsive-img box-img"></a>
 						</div>
+						<div class="col s11">
+							<a href="#">
+							<h6 class="username"><strong>the_kona_pup</strong></h6></a>
+						</div>
+					</div>
+					<!-- END POST BOX HEADER -->
+					<!-- POST BOX IMAGE -->
+					<div class="row content-img">
+						<img src="assets/img/posted-pic.jpg" alt="" class="responsive-img post-pic">
+					</div>
+					<!-- END POST BOX IMAGE -->
+					<!-- POST BOX COMMENTS -->
+					<div class="row content-comment">
+						<a href="#">
+							<i class="fa fa-paw like-button" aria-hidden="true"><span class="post-likes">16 likes</span></i></a>
+							<br>
+							<br>
+							<p class="comment-user">Hooch_Pooch</p><p class="comment-text">WOOF! WOOF!</p><br>
+							<p class="comment-user">Kool_kat</p><p class="comment-text">meeeeeeeeooooooow...</p><br>
+							<p class="comment-user">Thor</p><p class="comment-text">Woooooooooooooooooof! Ruff Ruff</p><br>
+							<hr>
 							
-							<div class="col s10">
-							<div class="input-field col s12">
-			          <i class="material-icons prefix"><i class="fa fa-comment-o" aria-hidden="true"></i>
-								</i>
-			          <input type="text" id="post-comment-input">
-			          <label for="post-comment-input"></label>
-		        	</div>
-		        	</div>
-
-		        <div class="col s1">
+							<div class="row>">
+								<div class="col s1">
+								</div>
+								
+								<div class="col s10">
+									<div class="input-field col s12">
+										<i class="material-icons prefix "><i class="fa fa-comment-o" aria-hidden="true"></i>
+										</i>
+										<input type="text" id="post-comment-input">
+										<label for="post-comment-input"></label>
+									</div>
+								</div>
+								<div class="col s1">
+								</div>
+							</div>
+							<div class="uploaded-pics"></div>
+							
 						</div>
-        	</div>
-					
+						<!-- END POST BOX COMMENTS -->
+					</div>
+					<!-- END POST BOX -->
 				</div>
-				<!-- END POST BOX COMMENTS -->
-
-		  </div>
-		  <!-- END POST BOX -->
-
-		</div>
-		<!-- END CONTENT COLUMN -->
-
-		<!-- MARGIN -->
-		<div class="col s3">
-		</div>
-		<!-- END MARGIN -->
-
-	</div>
-	<!-- END POST ROW -->
-
-<!-- jQUERY CDN -->
-<script
-	src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	crossorigin="anonymous"></script>
-
-<!-- MATERIALIZE JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-
-<script type="text/javascript">
-
-	  $(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-    $('#modal1').on('click', function() {
-
-    });
-  });
-
-</script>
-
-</body>
-</html>
+				<!-- END CONTENT COLUMN -->
+				<!-- MARGIN -->
+				<div class="col s3">
+				</div>
+				<!-- END MARGIN -->
+			</div>
+			<!-- END POST ROW -->
+			<!-- jQUERY CDN -->
+			<script
+				src="https://code.jquery.com/jquery-3.2.1.min.js"
+				integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"></script>
+			<!-- MATERIALIZE JS -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+			// the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+			$('.modal').modal();
+			$('#modal1').on('click', function() {
+	
+			};
+			});
+			
+			
+				});
+			
+			</script>
+		</body>
+	</html>
